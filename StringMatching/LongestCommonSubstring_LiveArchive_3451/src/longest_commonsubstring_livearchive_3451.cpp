@@ -54,7 +54,7 @@ int lowerBound(int minX, int maxX, function<int(int)> f, int value){
 	return low;
 }
 
-//Search lowest x such that f(x) >= value
+//Search lowest x such that f(x) > value
 int upperBound(int minX, int maxX, function<int(int)> f, int value){
 	int low = minX, hi = maxX+1, mid;
 	while(low < hi){
